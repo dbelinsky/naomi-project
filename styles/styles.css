@@ -1,0 +1,1119 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.visually-hidden {
+display: none;
+}
+
+body {
+font-family: open-sans, sans-serif;
+padding-right: 10px;
+width: 1650px;
+min-height: 100%;
+flex-direction: column;
+display: flex;
+margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
+
+.page-header {
+min-width: 1660px;
+min-height: 450px;
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.header-items {
+margin-left: 28px;
+margin-top: 27px;
+position: relative;
+z-index: 2;
+}
+
+.main-nav {
+display: flex;
+justify-content: space-around;
+}
+
+.burger-menu-item {
+  display: none;
+}
+
+.menu-item {
+margin-right: 22px;
+display: inline-block;
+}
+
+.menu-item-list {
+margin-left: -126px;
+}
+
+.menu-item:nth-child(n + 1) {
+padding-right: 2px;
+}
+
+.menu-item-link {
+font-style: normal;
+text-decoration: none;
+color: #ffff;
+text-transform: uppercase;
+font-size: 13px;
+}
+
+.menu-item-link:hover {
+text-decoration: underline;
+}
+
+.header-intro-text {
+width: 720px;
+font-size: 45px;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+line-height: 75px;
+margin: 0 auto;
+padding-top: 100px;
+padding-bottom: 127px;
+position: relative;
+color: #ffffff;
+z-index: 2;
+}
+
+.header-banner {
+position: absolute;
+}
+
+.header-banner img {
+width: 1650px;
+}
+
+.header-banner::after {
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.noemi-logo {
+margin-left: -157px;
+}
+
+.page-container {
+display: flex;
+justify-content: space-between;
+width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding-right: 11px;
+padding-left: 11px;
+flex-wrap: wrap;
+}
+
+.trens-header-title {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.3;
+  padding-bottom: 30px;
+  font-size: 1.25rem;
+}
+
+.top-line {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: open-sans-b, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.trens-header-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+}
+
+.trend-image-list {
+  display: flex;
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto 60px;
+}
+
+.trends-image {
+  width: 100%;
+}
+
+.trend-image-text {
+  border: 3px solid #887d4c;
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.trend-image-wrapper {
+  background-color: #eff6f1;
+  height: 320px;
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/trend1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: calc(100% - 5px);
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.card-two {
+  background-color: #eff6f1;
+  height: 320px;
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/trend2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: calc(100% - 5px);
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-three {
+  background-color: #eff6f1;
+  height: 320px;
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/trend3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: calc(100% - 5px);
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-four {
+  background-color: #eff6f1;
+  height: 320px;
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/trend4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: calc(100% - 5px);
+  display: flex;
+  align-items: flex-end;
+}
+
+.trend-image-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.trend-tag-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.trend-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  margin-right: 85px;
+}
+
+.trend-title-link {
+  color: #ffffff;
+}
+
+.trend-title-link:hover {
+  color: #b59f5b;
+}
+
+
+.content {
+margin: 0 auto;
+}
+
+.main-content {
+/* margin-right: 122px; */
+/* padding-left: 207px; */
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+.article-list,
+.news-list,
+.topic,
+.tags {
+list-style-type: none;
+}
+
+.tag-tags-link {
+color: goldenrod;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+display: inline;
+margin: 0;
+padding: 0;
+}
+
+.tag-tags-link:hover {
+text-decoration: underline;
+}
+
+.tag-link-item {
+display: inline-block;
+margin: o;
+padding: 0;
+}
+
+.tag-link-item:nth-child(2) {
+padding-left: 13px;
+}
+
+.tag-link-item:nth-child(3) {
+padding-left: 13px;
+}
+
+.tag-tags-link:nth-child(2) {
+padding-left: 13px;
+}
+
+.tag-tags-link:nth-child(3) {
+padding-left: 13px;
+}
+
+.article-data {
+margin-bottom: 5px;
+list-style: none;
+padding-left: 0px;
+}
+
+.tag-link {
+font-size: 12px;
+font-weight: 400;
+line-height: 40px;
+color: gray;
+text-decoration: none;
+display: inline-block;
+}
+
+.author {
+font-size: 12px;
+font-weight: 700;
+line-height: 40px;
+color: black;
+text-decoration: none;
+padding-left: 8px;
+padding-bottom: 5px;
+}
+
+.article-text {
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+color: black;
+font-style: normal;
+padding-top: 21px;
+}
+
+.article-text-additional {
+margin-top: -5px;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+color: black;
+font-style: normal;
+}
+
+.article-tags {
+margin-top: 0px;
+margin-bottom: 5px;
+list-style: none;
+padding-left: 0px;
+}
+
+.article-list {
+display: flex;
+flex-direction: column;
+width: 776px;
+}
+
+.news-list {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.article-list-item {
+width: 775px;
+display: flex;
+margin-bottom: 60px;
+}
+
+.article-image {
+width: 381px;
+height: 284px;
+background-color: #bcb3a1;
+}
+
+.article-information {
+text-align: left;
+margin-left: 28px;
+}
+
+.article-list:nth-child(1) {
+margin-top: 1px;
+margin-left: -28px;
+}
+
+.article-title {
+color: black;
+margin-top: 1px;
+font-size: 20px;
+line-height: 24px;
+font-weight: 700;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.article-title:hover,
+.news-link:hover {
+color: rgb(204, 153, 0);
+}
+
+.side-bar {
+width: 270px;
+}
+
+.side-bar-title {
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;
+color: rgb(0, 0, 0);
+text-align: center;
+margin: 0;
+padding-left: 10px;
+}
+
+.side-bar-title::after {
+content: "";
+display: block;
+
+width: 65px;
+height: 3px;
+background-color: rgb(181, 159, 91);
+
+margin: 12px auto 30px auto;
+}
+
+.news {
+display: flex;
+align-items: flex-start;
+margin-bottom: 18px;
+}
+
+.news:nth-child(n + 2) {
+margin-top: 18px;
+}
+
+.news-description {
+margin-left: 20px;
+}
+
+.news-date {
+font-size: 12px;
+font-weight: 400;
+color: rgb(136, 136, 136);
+}
+
+.news-title {
+margin: 5px 0 0 0;
+line-height: 17px;
+}
+
+.news-link {
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;
+color: rgb(0, 0, 0);
+line-height: 17px;
+}
+
+.searching-area {
+margin: 64px 0;
+display: flex;
+justify-content: space-between;
+}
+
+.search {
+display: flex;
+width: calc(100% - 48px);
+}
+
+.button-search {
+height: 48px;
+width: 48px;
+border: none;
+background-color: rgb(181, 159, 91);
+background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+background-repeat: no-repeat;
+background-size: 20px auto;
+background-position: center center;
+cursor: pointer;
+}
+
+.button-search:hover {
+background-color: #000000;
+}
+
+.button-search:focus {
+outline: none;
+border-color: none;
+}
+
+.field {
+ -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 13px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 60px;
+  border: 1px solid #f4f7f6;
+  width: 100%;
+  height: 48px;
+  background-color: #f4f7f6;
+}
+
+.field:focus {
+border: 1px solid #b59f5b;
+outline: none;
+}
+
+.side-bar-mail,
+.side-bar-tegs,
+.side-bar-topics {
+margin-bottom: 54px;
+}
+
+.mailing {
+display: flex;
+flex-direction: column;
+}
+
+.box {
+display: block;
+height: 48px;
+border: none;
+background-color: rgb(243, 247, 245);
+font-size: 13px;
+font-weight: 400;
+padding: 10px 20px;
+cursor: text;
+}
+
+.box:focus {
+border: 1px solid #b59f5b;
+outline: none;
+}
+
+.button-mailing {
+height: 48px;
+width: 100%;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;
+color: rgb(255, 255, 255);
+text-align: center;
+border: none;
+background-color: rgb(181, 159, 91);
+background-repeat: no-repeat;
+cursor: pointer;
+margin-top: 7px;
+}
+
+.button-mailing:hover {
+outline: none;
+border: none;
+background-color: #000000;
+}
+
+.tegs-catalog {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.side-teg-link {
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 12px;
+font-weight: 700;
+color: rgb(0, 0, 0);
+padding: 4px 13px;
+border: 3px solid rgb(243, 243, 243);
+margin-right: 1px;
+margin-bottom: 6px;
+}
+
+.side-teg-link:hover {
+border: 3px solid #b59f5b;
+}
+
+.tegs-catalog-item {
+margin-right: 4px;
+}
+
+
+.topics-catalog {
+list-style: none;
+justify-content: flex-start;
+padding-left: 0;
+margin: 0;
+margin-top: -13px;
+}
+
+.topics-catalog-item {
+display: flex;
+flex-wrap: wrap;
+border-bottom: 1px solid rgb(237, 237, 237);
+margin: 1px 0;
+}
+
+.side-topic-link {
+text-decoration: none;
+font-size: 14px;
+font-weight: 700;
+color: rgb(0, 0, 0);
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.side-topic-link:hover {
+font-size: 14px;
+color: #b59f5b;
+}
+
+.number {
+font-size: 12px;
+font-weight: 700;
+color: rgb(181, 159, 91);
+vertical-align: super;
+}
+
+.shopping-header{
+
+}
+
+
+.shopping-list {
+display: flex;
+justify-content: space-around;
+margin-bottom: 65px;
+gap: 65px;
+}
+
+.shopping-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shopping-text {
+  padding: 10px 0;
+  outline: 3px solid #d3c59d;
+  outline-offset: 20px;
+  flex-grow: 1;
+}
+
+.shopping-text {
+  padding: 10px 0;
+  outline: 3px solid #d3c59d;
+  outline-offset: 20px;
+  flex-grow: 1;
+}
+
+.item-info {
+  margin-bottom: 25px;
+}
+
+.item-info-link {
+  color: #d3c59d;
+}
+
+.item-info-link:hover {
+  color: #d3c59d;
+  text-decoration: underline;
+}
+
+.item-price {
+  display: flex;
+    justify-content: space-between;
+}
+
+.price-number {
+  display: flex;
+    font-weight: bold;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+.shopping-button button {
+  height: 48px;
+    border: none;
+    background-color: #b59f5b;
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    width: 140px;
+    text-align: center;
+}
+
+.shopping-button a {
+  color: #fff;
+}
+
+.shopping-button button:hover {
+  background-color: #000000;
+}
+
+.item-name {
+  font-weight: bold;
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+
+.page-footer {
+margin-bottom: 45px;
+}
+
+.social-block {
+width: 1200px;
+padding-top: -4px;
+padding-bottom: 30px;
+margin: auto;
+margin-left: 225px;
+}
+
+.link-list {
+height: 80px;
+background-color: rgb(243, 247, 245);
+display: flex;
+align-items: center;
+list-style: none;
+padding: 0;
+margin: 0;
+justify-content: center;
+}
+
+.footer-link:nth-child(n + 2) {
+margin-left: 25px;
+}
+
+.copyright {
+display: block;
+text-decoration: none;
+margin-top: 69px;
+font-size: 12px;
+font-weight: 700;
+color: rgb(153, 153, 153);
+text-align: center;
+}
+
+.copyright:hover {
+color: rgb(204, 153, 0);
+}
+
+.footer-link-item {
+display: block;
+width: 20px;
+height: 20px;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 20px;
+}
+
+.footer-link-item:hover {
+background-size: 22px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-header {
+    background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/banner-bg-tablet.jpg);
+    background-color: #666;
+    height: 613px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .noemi-logo {
+    width: 185px;
+
+    padding-left: 35px;
+  }
+
+  .menu-item-list {
+    display: none;
+  }
+
+  .nav {
+    font-size: 1rem;
+    color: red;
+  }
+
+  .burger-menu {
+    width: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 5px;
+    margin: 9px 35px;
+    justify-content: center;
+  }
+
+  .burger-menu-item:nth-child(1) {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    color: #eee;
+  }
+
+  .burger-menu-item:nth-child(2) {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    color: #eee;
+  }
+
+  .burger-menu-item:nth-child(2) {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    color: #eee;
+  }
+
+  .header-intro-text {
+    line-height: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 670px;
+    margin-top: 80px;
+    font-size: 2.8rem;
+  }
+
+  .trend-image-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trends-image {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+
+  .content {
+    max-width: 100%;
+    margin: 0 30px;
+  }
+
+  .main-articles {
+    margin-right: 35px;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: row;
+    margin-right: 35px;
+  }
+
+  .article-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news figure {
+    margin-right: 0;
+  }
+
+  .news-img {
+    width: 100%;
+  }
+
+
+  .news-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 0px;
+    position: relative;
+  }
+
+  .news-name {
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .about {
+    margin-top: 40px;
+  }
+
+  .news-text:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #eee;
+    bottom: -25px;
+  }
+
+  .shopping-list {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 65px;
+    gap: 75px;
+    flex-wrap: wrap;
+    margin-left: 35px;
+    gap: 85px;
+  }
+
+  .page-footer {
+    margin: 0 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-intro-text {
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    margin: 46px auto;
+    width: 328px;
+    font-size: 1.63rem;
+  }
+
+  .page-header {
+    background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/banner-mobile.jpg);
+    min-height: 640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 767px;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .noemi-logo {
+    margin-top: 235px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+  }
+
+  .burger-menu {
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 5px;
+    margin: 0 0 185px 0;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+  }
+
+  .burger-menu-item:nth-child(1) {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    color: #eee;
+  }
+
+  .burger-menu-item:nth-child(2) {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    color: #eee;
+  }
+
+  .burger-menu-item:nth-child(3) {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    color: #eee;
+  }
+
+  .menu-item-list {
+    display: none;
+  }
+
+  .trend-image-list {
+    display: flex;
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .content {
+    max-width: 100%;
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+
+  .main-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .news figure {
+    margin-right: 0;
+  }
+
+  .news-img {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .news {
+    flex-direction: column;
+  }
+
+  .news-teg {
+    margin: 0;
+  }
+
+
+
+  .news-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-text {}
+
+  .news-title {
+    margin-bottom: 30px;
+  }
+
+  .aside-bar {
+    margin-top: 15px;
+    width: 100%;
+
+  }
+
+  .aside-item {
+    margin-top: 15px;
+  }
+
+  .about {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .new-top {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .shopping-list {
+    display: flex;
+    margin-bottom: 65px;
+    gap: 65px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-foote {
+    margin: 0 15px;
+  }
+}
