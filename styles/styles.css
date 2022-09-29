@@ -806,7 +806,7 @@ background-size: 22px;
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .page-header {
-    background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/banner-bg-tablet.jpg);
+    background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/banner-bg-tablet.jpg);
     background-color: #666;
     height: 613px;
     background-repeat: no-repeat;
@@ -976,7 +976,7 @@ background-size: 22px;
   }
 
   .page-header {
-    background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/banner-mobile.jpg);
+    background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/banner-mobile.jpg);
     min-height: 640px;
     background-position: center;
     background-repeat: no-repeat;
