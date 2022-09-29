@@ -193,7 +193,7 @@ flex-wrap: wrap;
 .trend-image-wrapper {
   background-color: #eff6f1;
   height: 320px;
-  background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/trend1.jpg);
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/trend1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -207,7 +207,7 @@ flex-wrap: wrap;
 .card-two {
   background-color: #eff6f1;
   height: 320px;
-  background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/trend2.jpg);
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/trend2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -220,7 +220,7 @@ flex-wrap: wrap;
 .card-three {
   background-color: #eff6f1;
   height: 320px;
-  background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/trend3.jpg);
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/trend3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -233,7 +233,7 @@ flex-wrap: wrap;
 .card-four {
   background-color: #eff6f1;
   height: 320px;
-  background-image: url(https://raw.githubusercontent.com/dbelinsky/noemi.github.io/main/test/images/trend4.jpg);
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/trend4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
