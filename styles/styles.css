@@ -12,19 +12,26 @@
   font-style: normal;
 }
 
+textarea:focus, input:focus, select:focus
+{
+  outline: none;
+  border: 1px solid #b59f5b;
+}
+
 .visually-hidden {
 display: none;
 }
 
 body {
 font-family: open-sans, sans-serif;
-padding-right: 10px;
-width: 1650px;
+max-width: 1650px;
+min-width: 320px;
 min-height: 100%;
 flex-direction: column;
 display: flex;
 margin: 0 auto;
 }
+
 a {
   text-decoration: none;
   text-decoration-line: none;
@@ -75,7 +82,7 @@ padding-right: 2px;
 .menu-item-link {
 font-style: normal;
 text-decoration: none;
-color: #ffff;
+color: #fff;
 text-transform: uppercase;
 font-size: 13px;
 }
@@ -124,7 +131,7 @@ margin-left: -157px;
 .page-container {
 display: flex;
 justify-content: space-between;
-width: 1200px;
+width: 100%;
 margin-left: auto;
 margin-right: auto;
 padding-right: 11px;
@@ -153,15 +160,12 @@ flex-wrap: wrap;
 }
 
 .trens-header-title:after {
-  content: "";
   display: block;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 14px;
   width: 66px;
-  height: 3px;
-  background: #b59f5b;
+  margin: 0 auto;
+  padding-bottom: 14px;
+  content: "";
+  border-bottom: 3px solid #e1d9bd;
 }
 
 .trend-image-list {
@@ -322,6 +326,10 @@ margin: o;
 padding: 0;
 }
 
+.container-image {
+  width: 100%;
+}
+
 .tag-link-item:nth-child(2) {
 padding-left: 13px;
 }
@@ -391,7 +399,7 @@ padding-left: 0px;
 .article-list {
 display: flex;
 flex-direction: column;
-width: 776px;
+width: 100%збс;
 }
 
 .news-list {
@@ -407,7 +415,6 @@ margin-bottom: 60px;
 }
 
 .article-image {
-width: 381px;
 height: 284px;
 background-color: #bcb3a1;
 }
@@ -759,7 +766,6 @@ width: 1200px;
 padding-top: -4px;
 padding-bottom: 30px;
 margin: auto;
-margin-left: 225px;
 }
 
 .link-list {
@@ -804,15 +810,184 @@ background-size: 20px;
 background-size: 22px;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+/*Форма обратной связи*/
+
+.popup {
+  display: none;
+}
+
+.popup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.popup-form-container::after {
+  content: "";
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  z-index: 100;
+}
+
+.form-close {
+  width: 20px;
+  height: 20px;
+  padding: 0px 0px 50px 0px;
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/0108f918287415cd0b1c0a7f83ff93beb5ac3b67/images/form-x.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  border: none;
+  text-indent: -9999px;
+  cursor: pointer;
+  position: relative;
+  left: 370px;
+}
+
+.popup-title {
+    display: block;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29.15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(15, 13, 14);
+}
+
+.popup-title::after {
+  display: block;
+  width: 66px;
+  margin: 0 auto;
+  padding-bottom: 14px;
+  content: "";
+  border-bottom: 3px solid #e1d9bd; 
+}
+
+.radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);  
+}
+
+.radio:checked~.radio-button-description::before {
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/12c9df94b40a15c48cb9b2e0bc69d9ae27fd8fb6/images/form-circle.svg);
+}
+
+.radio-button-description::before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  content: "";
+  background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/12c9df94b40a15c48cb9b2e0bc69d9ae27fd8fb6/images/form-empty-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+
+.select {
+  width: 100%;
+   height: 48px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border: 1px solid #f4f7f6;
+  cursor: pointer;
+  background-image: url(../icons/svg/form-arrows.svg);
+  background-color: #f4f7f6;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  -webkit-appearance: none;
+}
+
+.popup-text-area {
+  padding-top: 21px;
+  min-height: 132px;
+  max-height: 132px;
+  resize: none;
+  width: 100%;
+  height: 48px;
+  padding-left: 21px;
+  box-sizing: border-box;
+  font-weight: 400;
+  background-color: #f4f7f6;
+  border: 1px solid #f4f7f6;
+  cursor: pointer;
+  white-space: pre-line;
+}
+
+.popup-item {
+  padding-top: 25px;
+}
+
+.popup-content-text {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.form-hint {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.button-shop {
+  width: 100%;
+  height: 48px;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #b59f5b;
+  background-color: #b59f5b;
+  cursor: pointer;  
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/banner-bg-tablet.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/banner-bg-tablet.jpg);
     background-color: #666;
     height: 613px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    min-width: 768px;
     margin: 0 auto;
   }
 
@@ -877,6 +1052,10 @@ background-size: 22px;
     font-size: 2.8rem;
   }
 
+  .page-container {
+    flex-wrap: nowrap;
+  }
+
   .trend-image-list {
     display: flex;
     flex-wrap: wrap;
@@ -903,6 +1082,7 @@ background-size: 22px;
   }
 
   .article-list-item {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -936,6 +1116,11 @@ background-size: 22px;
     margin-top: 40px;
   }
 
+  .article-information {
+    margin-left: 0px;
+    margin-top: 34px;
+  }
+
   .news-text:before {
     content: "";
     display: block;
@@ -944,6 +1129,10 @@ background-size: 22px;
     height: 3px;
     background: #eee;
     bottom: -25px;
+  }
+
+  .shopping-card {
+    width: 293px;
   }
 
   .shopping-list {
@@ -959,9 +1148,13 @@ background-size: 22px;
   .page-footer {
     margin: 0 35px;
   }
+
+  .social-block {
+    width: 100%;
+  }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .header-intro-text {
     line-height: 36px;
     text-transform: uppercase;
@@ -971,17 +1164,19 @@ background-size: 22px;
     z-index: 1;
     position: relative;
     margin: 46px auto;
-    width: 328px;
+    width: 284px;
     font-size: 1.63rem;
   }
 
   .page-header {
-    background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/banner-mobile.jpg);
-    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/banner-mobile.jpg);
+    min-width: 320px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 767px;
+    min-height: 640px;
   }
 
   .main-nav {
@@ -993,7 +1188,6 @@ background-size: 22px;
     margin-top: 235px;
     margin-left: auto;
     margin-right: auto;
-    width: 270px;
   }
 
   .burger-menu {
@@ -1045,8 +1239,33 @@ background-size: 22px;
   .content {
     max-width: 100%;
     flex-direction: column;
-    margin-top: 60px;
-    padding: 0 15px;
+  }
+
+  .trend-image-wrapper {
+    background-color: #eff6f1;
+    height: 320px;
+    background-image: url(https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/trend1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .article-information {
+    text-align: left;
+    max-width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0px;
   }
 
   .main-content {
@@ -1060,15 +1279,18 @@ background-size: 22px;
 
   .news-img {
     margin-bottom: 10px;
-    width: 100%;
   }
 
-  .news {
-    flex-direction: column;
-  }
 
   .news-teg {
     margin: 0;
+  }
+  
+
+  .article-list-item {
+    width: 100%;
+    display: inline;
+    flex-direction: column;
   }
 
 
@@ -1078,7 +1300,9 @@ background-size: 22px;
     flex-direction: column;
   }
 
-  .news-text {}
+  .shopping-card {
+    width: 300px;
+  }
 
   .news-title {
     margin-bottom: 30px;
@@ -1115,5 +1339,9 @@ background-size: 22px;
 
   .page-foote {
     margin: 0 15px;
+  }
+
+  .social-block {
+    width: 100%;
   }
 }

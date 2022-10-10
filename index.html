@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" href="№">
   <link rel="icon" type="image/png" sizes="32x32" href="images/vector-logos/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <div class="header-items">
       <nav class="main-nav">
         <a class="noemi-logo" href="https://noemi.com/">
-          <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" width="450" height="40" alt="noemi-logo">
+          <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" width="" height="40" alt="noemi-logo">
         </a>
         <div class="burger-menu">
           <div class="burger-menu-item"></div>
@@ -132,7 +133,10 @@
         <section class="main-articles">
           <ul class="article-list">
             <li class="article-list-item">
-              <img class="article-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="десять мест">
+              <picture class="container-image">
+                <source srcset="https://raw.githubusercontent.com/dbelinsky/naomi-project/main/images/base5mobile.jpg" type="image/jpeg" media="(max-width:640px)">
+                <img class="article-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="десять мест">
+              </picture>
               <article class="article-information">
                 <ul class="article-tags">
                   <li class="tag-link-item"><a class="tag-tags-link" href="#">Travel</a></li>
@@ -463,6 +467,46 @@
       <a href="#0" class="copyright">Copyright © 2009–2019 City Blog LLC.</a>
     </address>
   </footer>
+  <!--Форма обратной связи-->
+  <section class="popup">
+    <article class="popup-form-container">
+      <div class="form-content">
+        <button class="form-close">Закрыть окно</button>
+        <form class="popup-content">
+          <h2 class="popup-title">ваш фидбек</h2>
+          <div class="popup-item">
+            <label class="item-content">
+              <span class="popup-content-text">как часто вы заходите на сайт</span>
+              <select class="select">
+                <option select>каждый день</option>
+                <option>раз в несколько дней</option>
+                <option>раз внесколько недель</option>
+                <option>несколько раз в год</option>
+              </select>
+            </label>
+          </div>
+          <div class="popup-item">
+            <span class="form-hint">Вы подписаны на email рассылку?</span>
+            <label class="radio-button-form">
+              <input class="radio" type="radio" name="radio" required>
+              <span class="radio-button-description">да</span>
+            </label>
+            <label class="radio-button-form">
+              <input class="radio" type="radio" name="radio" required>
+              <span class="radio-button-description">нет</span>
+            </label>
+          </div>
+          <div class="popup-item">
+            <span class="popup-content-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="popup-text-area" placeholder="Может, больше рецептов?"></textarea>
+          </div>
+          <div class="popup-item">
+            <button class="button-shop">отправить</button>
+          </div>
+        </form>
+      </div>
+    </article>
+  </section>
 </body>
 
 </html>
